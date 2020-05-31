@@ -1,0 +1,47 @@
+# main links
+main:
+  - title: "About"
+    url: "/about"
+  # - title: "Our Aim"
+  #   url: "/aim/"
+  # - title: "Posts by Tag"
+  #   url: "/tags/"
+  # - title: "Sitemap"
+  #   url: "/sitemap/"
+  # - title: "identitywoman/identity-commons"
+  #   url: "https://github.com/identitywoman/identity-commons"
+  # - title: "RebootingWebOfTrust - Archive"
+  #   url: "https://decentralized-id.com/rwot-dir/"
+  # - title: "Decentralized Web - History"
+  #   url: "https://sourcecrypto.pub/decentralized-web/"
+# DID Nav
+# didnav:
+#   - title: "History"
+#     url: "/history/"
+#     children:
+#       - title: "• Resources & Pre-History"
+#         url: "/history/"
+#       - title: "• 2000-2009"
+#         url: "/history/2000-2009/"
+#       - title: "• 2010-2014"
+#         url: /history/2010-2014/
+#       - title: "• 2015-2019"
+#         url: /history/2015-2019/
+#   - title: Feature
+#     children:
+#       - title: "• Web Standards"
+#         url: "/specs-standards/"
+#       - title: " - JSON-LD"
+#         url: "/specs-standards/JSON-LD/"
+#       - title: "• GitHub Repositories"
+#         url: "/code/github/"
+#       - title: " - Identity Commons on Github"
+#         url: "https://github.com/identitywoman/identity-commons"
+#       - title: "• Literature"
+#         url: "/literature/"
+#       - title: " - RWoT - Papers Index"
+#         url: "/literature/rebooting-web-of-trust/"
+#       - title: " - Microledgers and Edgechains"
+#         url: "/hyperledger/hgf-2018/Microledgers-Edgechains-Hardman-HGF/"
+#       - title: "• #indieweb-dev on IIW RWoT and DID's"
+#         url: " /chatlog/indieweb-dev-on-did/"

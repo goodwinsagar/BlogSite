@@ -1,0 +1,157 @@
+minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Settings
+locale: "en-US"
+title: "Cloud Station"
+title_separator: "| "
+name: "Infominer"
+description: "This is a cloud related stuff."
+# url: "https://decentralized-id.com"
+baseurl: ""
+repository: "didecentral/didecentral.github.io"
+github: [metadata]
+teaser: /images/didecentral-tw.png
+# logo: "https://decentralized-id.com/images/DID.png"
+logo: "https://drive.google.com/file/d/1sQRhKqTKLNJHCB-COW8mxoQ0yKX05FIF/view?usp=sharing"
+masthead_title: "Cloud_Station"
+# breadcrumbs            : false # true, false (default)
+words_per_minute: 200
+comments:
+  provider: # "staticman_v2"https://drive.google.com/file/d/1sQRhKqTKLNJHCB-COW8mxoQ0yKX05FIF/view?usp=sharing
+  allowedFields: ["name", "email", "url", "message"]
+  repository: didecentral/didecentral.github.io
+  branch: "master"
+  commitMessage: "New comment by {fields.name}"
+  filename: comment-{@timestamp}
+  format: "yml"
+  moderation: true
+  path: "_data/comments/{options.slug}"
+  requiredFields: ["name", "email", "message"]
+
+  # Social Sharing
+twitter:
+  username: "infominer33"
+  site: "didecentral"
+#  description            : "Resources for Creating a Vendor Agnostic, User-Controlled, Identity Layer for the Internet."
+#  image                  : "https://decentralized-id.com/images/IDecentralized.png"
+facebook:
+  username:
+  app_id:
+  publisher:
+og_image: https://drive.google.com/file/d/1sQRhKqTKLNJHCB-COW8mxoQ0yKX05FIF/view?usp=sharing
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type: # Person or Organization (defaults to Person)
+  name: # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+
+# Analytics
+analytics:
+  provider: google # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id: UA-132558656-3
+    anonymize_ip: true
+
+# Site Author
+author:
+  name: "Nitheesh"
+  avatar: https://drive.google.com/file/d/1sQRhKqTKLNJHCB-COW8mxoQ0yKX05FIF/view?usp=sharing
+  bio: "Collaborative Curation, Community Research Initiative"
+  location: "Curating the Web"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:identitydecentralized@gmail.com
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://decentralized-id.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/didecentral"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://github.com/didecentral/didecentral.github.io"
+
+# Site Footer
+footer:
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:identitydecentralized@gmail.com
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://decentralized-id.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/didecentral"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/didecentral/didecentral.github.io"
+
+      # Outputting
+permalink: /:categories/:slug/ # https://jekyllrb.com/docs/permalinks/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+  collections:
+  HowToContribute:
+    output: true
+    permalink: /how-to-contribute/:path/
+
+# Defaults
+defaults:
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: # true
+      share: true
+      related: true
+      sidebar:
+        title: DIDecentral
+        nav: didnav
+      toc: true
+      toc_sticky: true
+  # _posts
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: # true
+      share: true
+      classes: wide
+      related: true
+      sidebar:
+        title: Cloud Station
+        nav: didnav
+      toc: true
+      toc_label: "Contents"
+      toc_icon: "link"
+      toc_sticky: true
+  # _HowToContribute
+  - scope:
+      path: "_HowToContribute"
+      type: HowToContribute
+    values:
+      layout: single
+      share: true
+      related: true
+      sidebar:
+        nav: "didnav"
+      classes: wide
